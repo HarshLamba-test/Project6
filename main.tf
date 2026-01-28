@@ -9,6 +9,9 @@ provider "aws" {
 resource "aws_s3_bucket" "website_bucket" {
 
   bucket = "harsh-project2-static-site-12345"
+tags = {
+  Name = "Terraform-S3-Updated"
+}
 
 }
 
